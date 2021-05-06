@@ -1,0 +1,13 @@
+.navbar{
+	background-color: #006666;
+}
+.row, .content{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+footer{
+	text-align: center;
+}
+h2{
+	color: #ff9999;
+}

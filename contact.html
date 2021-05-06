@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Una Fe Sencilla - Contacto</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+				<link rel="stylesheet" type="text/css" href="style.css">
+				<link rel="icon" href="logo.png" type="image/png">
+        <style type="text/css">
+        	.contact_us, .twitter-tweet{
+        		padding-left: 5%;
+        		padding-right: 5%;
+        	}
+					.contact_us a{
+						text-decoration: none;
+						color: #141E4D;
+					}
+					#c-redes{
+						display: none;
+					}
+					input{
+						border-left: none;
+						border-right: none;
+						border-top: none;
+						border-radius: 0px;
+					}
+					input:focus, textarea:focus{
+						outline: none;
+					}
+        </style>
+				<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+				<script src="main.js"></script>
+	</head>
+	<body onload="modoLuz(); luzLinks();">
+		<header>
+			<nav class="navbar">
+				<div class="navbar-collapse" style="display: inline;">
+					<a href="index.html"><img src="logo.png" width="4%" height="4%" href="index.html"></a>
+					<a href="index.html" class="navbar-brand" style="color: #fafbfd;">Una Fe Sencilla</a>&nbsp&nbsp&nbsp&nbsp
+					<a class="nav-item" href="about.html?pagename=about#vid" style="color: #fafbfd;">Sobre nosotros...</a>&nbsp&nbsp&nbsp&nbsp
+					<a class="nav-item" href="contact.html" style="color: #fafbfd;">Contactanos</a>&nbsp&nbsp&nbsp&nbsp
+					<a class="nav-item" href="activities.html" style="color: #fafbfd;">Actividades</a>&nbsp&nbsp&nbsp&nbsp
+				</div>
+			</nav>
+		</header>
+		<span class="Progress progress-pjax-loader position-fixed width-full js-pjax-loader-bar">
+			<span class="progress-pjax-loader-bar top-0 left-0" style="width: 0%;"></span>
+		</span>
+		<div class="content">
+			<address id="hd-info">
+			    Ciudad de Guatemala, Guatemala<br />
+			    Guatemala<br />
+			    <abbr title="Telefono">Telefono:</abbr>
+			    +502 ####-####
+			</address>
+
+			<address class="row" style="padding-left: 0%; padding-right: 0%;">
+				<div class="col-2" id="fields">
+					<strong>Evangelismo:</strong>
+					<strong>Oración:</strong><br>
+					<strong>Más:</strong>
+				</div>
+				<div class="col-1">
+				    <a id="e-cap" href="mailto:unafesencilla@gmail.com?subject=Evangelismo&body=Quisiera_mas_info_sobre evangelismo" target="_blank">unafesencilla@gmail.com</a><br />
+				    <a id="e-or" href="mailto:unafesencilla@gmail.com?subject=Peticiones&body=Puedes_dejarnos_tus_peticiones,_las_tendremos_en_oracion" target="_blank">unafesencilla@gmail.com</a><br>
+				    <a id="e-pr" href="mailto:unafesencilla@gmail.com?subject=Participaciones&body=Me_gustari_participar_en" target="_blank">unafesencilla@gmail.com</a>
+			    </div>
+			</address>
+		</div>
+		<div class="contact_us">
+			<form action="https://formspree.io/f/unafesencilla@gmail.com" method="post">
+				<h5 style="color: #006666">Consultas, informacion o peticiones</h5>
+				<label>Nombre&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+				<input type="text" name="Nombre" class="name" placeholder="Nombre (Apellido)" required>
+				<br>
+				<label>Telefono&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+				<input type="text" name="Telefono" class="phone" placeholder="+502 1234 5678" required>
+				<br>
+				<label>Correo Electronico&nbsp</label>
+				<input type="email" name="Email" class="email" placeholder="algo@ejemplo.com" required>
+				<br>
+				<label>Mensaje</label>
+				<br>
+				<textarea type="text" name="Mensaje" class="message" placeholder="Mensaje..." style="width: 50%; height: 100px;" required></textarea>
+				<br>
+				<div class="status">
+
+				</div>
+				<br>
+				<button type="submit" class="btn btn-secondary" id="enviar">Enviar</button><br><br>
+			</form>
+		</div>
+		<div class="contact_us">
+			<p id="c-redes">
+				<b>Encuéntranos en redes:</b><br>
+				<a href="https://www.facebook.com/unafesencillagt" target="_blank">https://facebook.com/unafesencillagt</a><br>
+				<b>Contáctanos:</b><br>
+				<a href="mailto:unafesencilla@gmail.com" target="_blank">unafesencilla@gmail.com</a><br>
+				<b>Visita nuestra página web:</b><br>
+				<a href="https://unafesencilla.org">https://unafesencilla.org</a><br>
+			</p>
+			<button class="btn btn-light" id="btn-contact" onclick="copiar('c-redes');">Contactos</button>
+		</div>
+		<br>
+		<br>
+		<div class="socialMedia row">
+			<a href="https://www.facebook.com/unafesencillagt" target="_blank" class="btn-red-social" style="background-color: #3b5998;"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://www.twitter.com/" target="_blank" class="btn-red-social" style="background-color: #00acee;"><i class="fab fa-twitter"></i></a>
+			<a href="https://www.instagram.com/" target="_blank" class="btn-red-social" style="background-color: #E1306C;"><i class="fab fa-instagram"></i></a>
+		</div>
+		<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+		<script>
+			function modoLuz(){
+				var dia = new Date();
+				var hora = dia.getHours();
+				var hdi = document.getElementById("hd-info");
+				var link1 = document.getElementById("e-cap"), link2 = document.getElementById("e-or"), link3 = document.getElementById("e-pr");
+				const labels = document.getElementById('fields');
+				var etiquetas = document.getElementsByTagName("label");
+				var l = etiquetas.length;
+				if (hora < 6){
+					document.body.setAttribute("style", "background-color: #191919;");
+					document.getElementById("enviar").setAttribute("class", "btn btn-primary");
+					hdi.setAttribute("style", "color: white;");
+					link1.setAttribute("style", "color: #ff9999; text-decoration: none;");
+					link2.setAttribute("style", "color: #ff9999; text-decoration: none;");
+					link3.setAttribute("style", "color: #ff9999; text-decoration: none;");
+					fields.setAttribute("style", "color: gray;");
+					for (var n=0; n<l; n++){
+						etiquetas[n].setAttribute("style", "color: #eedd79");
+					}
+					console.log('Madrugada');
+				} else if (hora < 12){
+					document.body.setAttribute("style", "background-color: white;");
+					console.log('Buenos días');
+				} else if (hora < 18) {
+					document.body.setAttribute("style", "background-color: white;");
+					console.log('Buenas tardes');
+				} else {
+					document.body.setAttribute("style", "background-color: #191919;")
+					document.getElementById("enviar").setAttribute("class", "btn btn-primary");
+					hdi.setAttribute("style", "color: white;");
+					link1.setAttribute("style", "color: #ff9999; text-decoration: none;");
+					link2.setAttribute("style", "color: #ff9999; text-decoration: none;");
+					link3.setAttribute("style", "color: #ff9999; text-decoration: none;");
+					fields.setAttribute("style", "color: gray;");
+					for (var n=0; n<l; n++){
+						etiquetas[n].setAttribute("style", "color: #eedd79");
+					}
+					console.log('Buenas noches');
+				}
+			}
+
+			function copiar(id_elemento) {
+				var aux = document.createElement("div");
+				aux.setAttribute("contentEditable", true);
+				aux.innerHTML = document.getElementById(id_elemento).innerHTML;
+				aux.setAttribute("onfocus", "document.execCommand('selectAll',false,null)");
+				document.body.appendChild(aux);
+				aux.focus();
+				document.execCommand("copy");
+				document.body.removeChild(aux);
+				console.log("¡Copiado!");
+				var boton = document.getElementById("btn-contact");
+				boton.setAttribute("class", "btn btn-secondary");
+				//boton.setAttribute("style", "background-color: #757272; color: white;");
+				boton.innerHTML = "Copiado";
+			}
+		</script>
+		<footer>
+			<hr>
+			&copy; 2021 - Una Fe Sencilla
+		</footer>
+		<script type="text/javascript">
+			function luzLinks(){
+				var dia = new Date();
+				var hora = dia.getHours();
+				var links = document.getElementsByClassName("socialLink");
+				if (hora<6) {
+					for (var i=0; i<links.length; i++) {
+						links[i].setAttribute("style", "color: white;")
+					}
+				} else if (hora<12) {
+
+				} else if (hora<18) {
+
+				} else {
+					for (var i=0; i<links.length; i++) {
+						links[i].setAttribute("style", "color: white;")
+					}
+				}
+			}
+		</script>
+	</body>
+</html>
